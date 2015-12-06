@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  >
+
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="点击事件的4种写法"
+    android:textColor="#ff002e"
+    android:textSize="22sp"
+    />
+
+
+  <Button
+    android:id="@+id/btn01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="按钮01"
+    />
+
+  <Button
+    android:id="@+id/btn02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="按钮02"
+    />
+
+  <Button
+    android:id="@+id/btn03"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="按钮03"
+    />
+
+  <Button
+    android:id="@+id/btn04"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="clickButton04"
+    android:text="按钮04"
+    />
+
+
+</LinearLayout>
