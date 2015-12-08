@@ -19,7 +19,10 @@
       </intent-filter>
     </activity>
     <activity android:name=".LinearLayoutActivity"></activity>
-    <activity android:name=".RelativeTableLayout"></activity>
+    <activity android:name=".RelativeTableLayoutActivity"></activity>
+    <activity android:name=".FrameGridLayoutActivity"></activity>
+    <activity android:name=".ToastActivity"></activity>
+    <activity android:name=".TextViewEditTextActivity"></activity>
   </application>
 
 </manifest>

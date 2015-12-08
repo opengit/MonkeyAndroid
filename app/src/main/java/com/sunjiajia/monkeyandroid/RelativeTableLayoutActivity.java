@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 /**
  * Created by monkey on 12/6/15.
  */
-public class RelativeTableLayout extends BaseActivity {
+public class RelativeTableLayoutActivity extends BaseActivity {
   @Override public int giveViewResId() {
     return R.layout.activity_relative_table_layout;
   }

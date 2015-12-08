@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  >
+
+  <TextView
+    android:id="@+id/textView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="Toast Activity"
+    android:textColor="#000000"
+    android:textSize="30sp"
+    />
+
+  <Button
+    android:id="@+id/btn_toast1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="短时间土司1号"
+    />
+
+  <Button
+    android:id="@+id/btn_toast2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="长时间土司2号"
+    />
+
+  <Button
+    android:id="@+id/btn_toast3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="图片土司3号"
+    />
+
+  <Button
+    android:id="@+id/btn_toast4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="图文土司4号"
+    />
+
+</LinearLayout>
