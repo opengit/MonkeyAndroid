@@ -1,9 +1,27 @@
-package com.sunjiajia.monkeyandroid;
+/*
+ *
+ *  *
+ *  *  * ===================================
+ *  *  * Copyright (c) 2016.
+ *  *  * 作者：安卓猴
+ *  *  * 微博：@安卓猴
+ *  *  * 博客：http://sunjiajia.com
+ *  *  * Github：https://github.com/opengit
+ *  *  *
+ *  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+ *  *  * ===================================
+ *  *
+ *  *
+ *
+ */
+
+package com.sunjiajia.monkeyandroid.baselearn.activity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import com.sunjiajia.monkeyandroid.R;
 
 /**
  * 《Monkey Android》第6课点击事件的四种写法
@@ -11,14 +29,14 @@ import android.widget.Toast;
  */
 public class LinearLayoutActivity extends BaseActivity implements View.OnClickListener {
 
-  @Override public int giveViewResId() {
-    return R.layout.activity_linear_layout;
-  }
-
   private Button mButton01;
   private Button mButton02;
   private Button mButton03;
   private Button mButton04;
+
+  @Override public int giveViewResId() {
+    return R.layout.activity_linear_layout;
+  }
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -51,17 +69,17 @@ public class LinearLayoutActivity extends BaseActivity implements View.OnClickLi
         .show();
   }
 
+  @Override public void onClick(View v) {
+
+    Toast.makeText(LinearLayoutActivity.this, mButton02.getClass().toString() + "--> Button02",
+        Toast.LENGTH_SHORT).show();
+  }
+
   class MyButtonClickListener implements View.OnClickListener {
 
     @Override public void onClick(View v) {
       Toast.makeText(LinearLayoutActivity.this, mButton03.getClass().toString() + "--> Button03",
           Toast.LENGTH_SHORT).show();
     }
-  }
-
-  @Override public void onClick(View v) {
-
-    Toast.makeText(LinearLayoutActivity.this, mButton02.getClass().toString() + "--> Button02",
-        Toast.LENGTH_SHORT).show();
   }
 }

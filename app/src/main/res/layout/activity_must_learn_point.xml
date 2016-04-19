@@ -1,0 +1,58 @@
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <Button
+        android:id="@+id/btn_sdcard_avail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取SD卡剩余空间"
+        />
+
+    <Button
+        android:id="@+id/btn_sms_backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用xml备份短信"
+        />
+
+    <Button
+        android:id="@+id/btn_xml_parse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解析xml"
+        />
+
+    <Button
+        android:id="@+id/btn_unit_debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单元测试"
+        />
+  </LinearLayout>
+
+</ScrollView>

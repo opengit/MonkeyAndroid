@@ -19,48 +19,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     >
 
+  <Button
+      android:id="@+id/btn_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:drawableLeft="@mipmap/ic_launcher"
+      android:onClick="btnClicked"
+      android:text="安卓猴是Button"
+      android:textSize="26sp"
+      />
 
-  <TextView
+  <Button
+      android:id="@+id/btn_transparent_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:onClick="btnClicked"
+      android:text="透明背景Button"
+      android:textSize="26sp"
+      style="?android:attr/borderlessButtonStyle"
+      />
+
+  <Button
+      android:id="@+id/btn_selector_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:background="@drawable/bg_btn"
+      android:onClick="btnClicked"
+      android:text="设置selector的Button"
+      android:textSize="26sp"
+      style="?android:attr/borderlessButtonStyle"
+      />
+
+  <ImageButton
+      android:id="@+id/imagebtn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="点击事件的4种写法"
-      android:textColor="#ff002e"
-      android:textSize="22sp"
+      android:layout_gravity="center_horizontal"
+      android:onClick="btnClicked"
+      android:src="@mipmap/ic_launcher"
       />
-
-
-  <Button
-      android:id="@+id/btn01"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="按钮01"
-      />
-
-  <Button
-      android:id="@+id/btn02"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="按钮02"
-      />
-
-  <Button
-      android:id="@+id/btn03"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="按钮03"
-      />
-
-  <Button
-      android:id="@+id/btn04"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:onClick="clickButton04"
-      android:text="按钮04"
-      />
-
 
 </LinearLayout>

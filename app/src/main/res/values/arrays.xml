@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<resources>
+  <array name="av_male">
+    <item>静态数据Spinner</item>
+    <item>苍井空</item>
+    <item>苍小妹</item>
+    <item>苍二妹</item>
+    <item>朝桐光</item>
+    <item>朝小姐</item>
+    <item>朝美女</item>
+    <item>小泽玛利亚</item>
+    <item>小仓美女</item>
+    <item>西翔野</item>
+    <item>西门庆</item>
+    <item>孙静雅</item>
+    <item>孙悟空</item>
+    <item>波多野结衣</item>
+    <item>菠萝菠萝蜜</item>
+  </array>
+
+  <array name="city">
+    <item>动态填充数据2</item>
+    <item>北京</item>
+    <item>上海</item>
+    <item>深圳</item>
+    <item>广州</item>
+    <item>洛杉矶</item>
+    <item>纽约</item>
+    <item>华盛顿</item>
+  </array>
+</resources>

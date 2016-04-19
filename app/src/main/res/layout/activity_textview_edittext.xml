@@ -1,107 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:gravity="center"
-  android:orientation="vertical"
-  android:weightSum="1"
-  >
-
-
-  <TextView
-    android:id="@+id/tv_login"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:autoLink="all"
-    android:background="@android:color/holo_green_dark"
-    android:text="登陆Login"
-    android:textAllCaps="true"
-    android:textColor="@android:color/holo_red_dark"
-    android:textSize="30sp"
-    android:textStyle="bold"
-    />
-
-
-  <TableLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/image_view"
-    android:layout_margin="16dp"
-    android:stretchColumns="1"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
     >
 
 
-    <TableRow
+  <TextView
+      android:id="@+id/tv_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:autoLink="all"
+      android:background="@android:color/holo_green_dark"
+      android:text="登陆Login"
+      android:textAllCaps="true"
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      />
+
+
+  <TableLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/image_view"
+      android:layout_margin="16dp"
+      android:stretchColumns="1"
       >
 
-      <TextView
-        android:id="@+id/text_view_uname"
-        android:layout_column="0"
-        android:text="用户名："
-        android:textSize="16sp"
-
-        />
-
-      <EditText
-        android:id="@+id/et_uname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:hint="不能为空"
-        />
-    </TableRow>
 
     <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
-
-      <TextView
-        android:id="@+id/text_view_pwd"
-        android:layout_column="0"
-        android:text="密码："
-        android:textSize="16sp"
-        />
-
-      <EditText
-        android:id="@+id/et_pwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:ems="10"
-        android:hint="不能为空"
-        android:inputType="textPassword"
-        />
-    </TableRow>
-
-    <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
-
-      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_column="0"
-        android:layout_gravity="right"
-        android:layout_span="2"
-        android:orientation="horizontal"
         >
 
-        <Button
-          android:id="@+id/btn_login"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="登陆"
+      <TextView
+          android:id="@+id/text_view_uname"
+          android:layout_column="0"
+          android:text="用户名："
+          android:textSize="16sp"
+
           />
 
-        <Button
+      <EditText
+          android:id="@+id/et_uname"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="注册"
+          android:layout_column="1"
+          android:hint="不能为空"
           />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <TextView
+          android:id="@+id/text_view_pwd"
+          android:layout_column="0"
+          android:text="密码："
+          android:textSize="16sp"
+          />
+
+      <EditText
+          android:id="@+id/et_pwd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_column="1"
+          android:ems="10"
+          android:hint="不能为空"
+          android:inputType="textPassword"
+          />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_column="0"
+          android:layout_gravity="right"
+          android:layout_span="2"
+          android:orientation="horizontal"
+          >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
 
       </LinearLayout>
 

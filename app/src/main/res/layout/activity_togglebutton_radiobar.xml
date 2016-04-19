@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <!--
+      android:textOff="关闭"
+        用来设置关闭状态时的文字显示；
+      android:textOn="打开"
+        用来设置打开状态时的文字显示；
+      android:checked="true"
+        true表示默认状态为打开，false表示默认状态为关闭。
+  -->
+
+  <ToggleButton
+      android:id="@+id/toggle_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:checked="true"
+      android:text="ToggleButton"
+      android:textOff="关闭"
+      android:textOn="打开"
+      />
+
+  <Switch
+      android:id="@+id/switch_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="Switch"
+      />
+
+  <!--
+      android:numStars="5"
+        用来设置星型的个数；
+      android:rating="1.5"
+        默认选定的星型个数，可为小数；
+      android:stepSize="0.5"
+        用来设置星型改变时的步频。
+
+      注意：
+          如果设置了android:numStars，那么android:layout_width必须设置为wrap_content
+  -->
+
+  <RatingBar
+      android:id="@+id/rating_bar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:numStars="5"
+      android:rating="1.5"
+      android:stepSize="0.5"
+      />
+</LinearLayout>

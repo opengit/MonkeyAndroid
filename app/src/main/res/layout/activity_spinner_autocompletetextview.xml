@@ -19,48 +19,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     >
 
 
-  <TextView
+  <!--
+       android:entries="@array/av_male"
+          用来绑定静态的array数据。
+  -->
+
+  <Spinner
+      android:id="@+id/spinner_male"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="点击事件的4种写法"
-      android:textColor="#ff002e"
-      android:textSize="22sp"
+      android:entries="@array/av_male"
+      />
+
+  <Spinner
+      android:id="@+id/spinner_city"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
       />
 
 
-  <Button
-      android:id="@+id/btn01"
+  <!--
+      android:completionThreshold="1"
+        用来设置第几个字符开始提示；
+  -->
+
+
+  <AutoCompleteTextView
+      android:id="@+id/tv_autocomplete"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="按钮01"
+      android:completionThreshold="1"
+      android:hint="请输入侍寝的女优名字"
       />
-
-  <Button
-      android:id="@+id/btn02"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="按钮02"
-      />
-
-  <Button
-      android:id="@+id/btn03"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="按钮03"
-      />
-
-  <Button
-      android:id="@+id/btn04"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:onClick="clickButton04"
-      android:text="按钮04"
-      />
-
-
 </LinearLayout>

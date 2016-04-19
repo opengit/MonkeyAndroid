@@ -1,3 +1,20 @@
+/*
+ *
+ *  *
+ *  *  * ===================================
+ *  *  * Copyright (c) 2016.
+ *  *  * 作者：安卓猴
+ *  *  * 微博：@安卓猴
+ *  *  * 博客：http://sunjiajia.com
+ *  *  * Github：https://github.com/opengit
+ *  *  *
+ *  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+ *  *  * ===================================
+ *  *
+ *  *
+ *
+ */
+
 apply plugin: 'com.android.application'
 
 android {
@@ -5,12 +22,12 @@ android {
     app {
       keyAlias 'sunjiajia'
       keyPassword '9985979aa'
-      storeFile file('/home/monkey/Projects/AndroidStudioProjects/sunjiajia.jks')
+      storeFile file('D:/projects/AndroidStudioProjects/sunjiajia.jks')
       storePassword '9985979aa'
     }
   }
   compileSdkVersion 23
-  buildToolsVersion "23.0.2"
+  buildToolsVersion '23.0.2'
 
   defaultConfig {
     applicationId "com.sunjiajia.monkeyandroid"
@@ -38,5 +55,7 @@ android {
 
 dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
-  compile 'com.android.support:appcompat-v7:23.1.1'
+  compile 'com.jakewharton:butterknife:7.0.1'
+  compile 'com.android.support:design:23.3.0'
+  compile 'com.android.support:appcompat-v7:23.3.0'
 }

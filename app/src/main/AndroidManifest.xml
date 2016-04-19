@@ -1,28 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-  package="com.sunjiajia.monkeyandroid"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  >
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunjiajia.monkeyandroid">
+
+
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 
   <application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme"
-    >
-    <activity android:name=".MainActivity">
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity android:name=".baselearn.activity.MainActivity">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name=".LinearLayoutActivity"></activity>
-    <activity android:name=".RelativeTableLayoutActivity"></activity>
-    <activity android:name=".FrameGridLayoutActivity"></activity>
-    <activity android:name=".ToastActivity"></activity>
-    <activity android:name=".TextViewEditTextActivity"></activity>
+    <activity android:name=".baselearn.activity.LinearLayoutActivity"></activity>
+    <activity android:name=".baselearn.activity.RelativeTableLayoutActivity"></activity>
+    <activity android:name=".baselearn.activity.FrameGridLayoutActivity"></activity>
+    <activity android:name=".baselearn.activity.ToastActivity"></activity>
+    <activity android:name=".baselearn.activity.TextViewEditTextActivity"></activity>
+    <activity android:name=".baselearn.activity.ButtonActivity"></activity>
+    <activity android:name=".baselearn.activity.ImageViewActivity"></activity>
+    <activity android:name=".baselearn.activity.CheckBoxRadioButtonActivity"></activity>
+    <activity android:name=".baselearn.activity.ToggleButtonRadioBarActivity"></activity>
+    <activity android:name=".baselearn.activity.SpinnerAutoCompleteTextViewActivity"></activity>
+    <activity android:name=".mustlearn.MustLearnPointActivity"></activity>
   </application>
 
 </manifest>

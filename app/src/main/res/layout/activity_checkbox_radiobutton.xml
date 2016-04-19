@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+
+  <CheckBox
+      android:id="@+id/checkbox_xiaoshuo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="小说"
+      />
+
+  <CheckBox
+      android:id="@+id/checkbox_youxi"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="游戏"
+      />
+
+  <CheckBox
+      android:id="@+id/checkbox_dianying"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="电影"
+      />
+
+  <!--
+      这里是一个1dp高度view，用做一个分割线
+  -->
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@android:color/darker_gray"
+      />
+
+
+  <!--
+      android:checkedButton="@+id/radiobutton_apple"
+          表示默认选中的RadioButton；
+
+      android:orientation="horizontal"
+          表示RadioGroup中的RadioButton的是竖直排列还是水平排列
+  -->
+
+
+  <RadioGroup
+      android:id="@+id/radio_group"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checkedButton="@+id/radiobutton_apple"
+      android:orientation="horizontal"
+      >
+
+
+    <RadioButton
+        android:id="@+id/radiobutton_banana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香蕉"
+        />
+
+    <RadioButton
+        android:id="@+id/radiobutton_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="苹果"
+        />
+
+    <RadioButton
+        android:id="@+id/radiobutton_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="橘子"
+        />
+
+  </RadioGroup>
+
+</LinearLayout>

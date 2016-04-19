@@ -17,14 +17,19 @@
 
 package com.sunjiajia.monkeyandroid;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.Application;
-import android.test.ApplicationTestCase;
+import android.support.v4.app.ActivityCompat;
 
 /**
- * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
+ * Created by Administrator on 2016/4/16.
  */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-  public ApplicationTest() {
-    super(Application.class);
+public class MyApplication extends Application {
+
+
+  @Override public void onCreate() {
+    super.onCreate();
   }
+
 }

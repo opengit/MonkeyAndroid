@@ -16,8 +16,17 @@
   ~  */
   -->
 
-<resources>
-  <color name="colorPrimary">#3F51B5</color>
-  <color name="colorPrimaryDark">#303F9F</color>
-  <color name="colorAccent">#FF4081</color>
-</resources>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <item
+      android:id="@+id/menu_must_learn_point"
+      android:orderInCategory="100"
+      android:title="知识点"
+      app:showAsAction="never">
+
+  </item>
+
+
+</menu>

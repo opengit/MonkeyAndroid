@@ -1,128 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * ===================================
+  ~  *  * Copyright (c) 2016.
+  ~  *  * 作者：安卓猴
+  ~  *  * 微博：@安卓猴
+  ~  *  * 博客：http://sunjiajia.com
+  ~  *  * Github：https://github.com/opengit
+  ~  *  *
+  ~  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  * ===================================
+  ~  *
+  ~  *
+  ~  */
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  >
-
-  <TextView
-    android:id="@+id/text_view"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:background="#41c2fa"
-    android:text="我右边是Button"
-    android:textColor="#fc0000"
-    android:textSize="22sp"
-    />
-
-  <Button
-    android:id="@+id/button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_gravity="center_horizontal"
-    android:layout_toEndOf="@+id/text_view"
-    android:layout_toRightOf="@+id/text_view"
-    android:text="我下边是ImageView"
-    />
-
-  <ImageView
-    android:id="@+id/image_view"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignLeft="@+id/button"
-    android:layout_alignStart="@+id/button"
-    android:layout_below="@+id/button"
-    android:src="@mipmap/ic_launcher"
-    />
-
-  <TableLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@id/image_view"
-    android:stretchColumns="1"
     >
 
+  <TextView
+      android:id="@+id/text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:background="#41c2fa"
+      android:text="我右边是Button"
+      android:textColor="#fc0000"
+      android:textSize="22sp"
+      />
 
-    <TableRow
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_gravity="center_horizontal"
+      android:layout_toEndOf="@+id/text_view"
+      android:layout_toRightOf="@+id/text_view"
+      android:text="我下边是ImageView"
+      />
+
+  <ImageView
+      android:id="@+id/image_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/button"
+      android:layout_alignStart="@+id/button"
+      android:layout_below="@+id/button"
+      android:src="@mipmap/ic_launcher"
+      />
+
+  <TableLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      android:layout_below="@id/image_view"
+      android:stretchColumns="1"
       >
-
-      <TextView
-        android:id="@+id/text_view_uname"
-        android:layout_column="0"
-        android:text="用户名："
-        android:textSize="16sp"
-
-        />
-
-      <EditText
-        android:id="@+id/edit_text_uname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        />
-    </TableRow>
-
-    <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
-
-      <TextView
-        android:id="@+id/text_view_pwd"
-        android:layout_column="0"
-        android:text="密码："
-        android:textSize="16sp"
-        />
-
-      <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:ems="10"
-        android:inputType="textPassword"
-        />
-    </TableRow>
 
 
     <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
-
-    </TableRow>
-
-
-    <TableRow
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      >
-
-      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_column="0"
-        android:layout_gravity="right"
-        android:layout_span="2"
-        android:orientation="horizontal"
         >
 
-        <Button
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="登陆"
+      <TextView
+          android:id="@+id/text_view_uname"
+          android:layout_column="0"
+          android:text="用户名："
+          android:textSize="16sp"
+
           />
 
-        <Button
+      <EditText
+          android:id="@+id/edit_text_uname"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="注册"
+          android:layout_column="1"
           />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <TextView
+          android:id="@+id/text_view_pwd"
+          android:layout_column="0"
+          android:text="密码："
+          android:textSize="16sp"
+          />
+
+      <EditText
+          android:id="@+id/editText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_column="1"
+          android:ems="10"
+          android:inputType="textPassword"
+          />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_column="0"
+          android:layout_gravity="right"
+          android:layout_span="2"
+          android:orientation="horizontal"
+          >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
 
       </LinearLayout>
 
