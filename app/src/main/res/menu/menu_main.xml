@@ -22,11 +22,19 @@
 
   <item
       android:id="@+id/menu_must_learn_point"
+      android:icon="@mipmap/ic_explore_white_24dp"
       android:orderInCategory="100"
       android:title="知识点"
-      app:showAsAction="never">
+      app:showAsAction="ifRoom">
 
   </item>
+  <item
+      android:id="@+id/menu_custom_widgets"
+      android:icon="@mipmap/ic_widgets_white_24dp"
+      android:orderInCategory="100"
+      android:title="自定义控件"
+      app:showAsAction="ifRoom">
 
+  </item>
 
 </menu>

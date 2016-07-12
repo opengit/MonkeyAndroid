@@ -14,11 +14,9 @@
   ~  *
   ~  *
   ~  */
-  -->
-
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sunjiajia.monkeyandroid">
-
 
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -28,6 +26,11 @@
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
   <uses-permission android:name="android.permission.RECORD_AUDIO"/>
   <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  // 打电话广播接收者需要的权限
+  <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+  <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
   <application
       android:allowBackup="true"
@@ -38,20 +41,47 @@
     <activity android:name=".baselearn.activity.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name=".baselearn.activity.LinearLayoutActivity"></activity>
-    <activity android:name=".baselearn.activity.RelativeTableLayoutActivity"></activity>
-    <activity android:name=".baselearn.activity.FrameGridLayoutActivity"></activity>
-    <activity android:name=".baselearn.activity.ToastActivity"></activity>
-    <activity android:name=".baselearn.activity.TextViewEditTextActivity"></activity>
-    <activity android:name=".baselearn.activity.ButtonActivity"></activity>
-    <activity android:name=".baselearn.activity.ImageViewActivity"></activity>
-    <activity android:name=".baselearn.activity.CheckBoxRadioButtonActivity"></activity>
-    <activity android:name=".baselearn.activity.ToggleButtonRadioBarActivity"></activity>
-    <activity android:name=".baselearn.activity.SpinnerAutoCompleteTextViewActivity"></activity>
-    <activity android:name=".mustlearn.MustLearnPointActivity"></activity>
+    <activity android:name=".baselearn.activity.LinearLayoutActivity"/>
+    <activity android:name=".baselearn.activity.RelativeTableLayoutActivity"/>
+    <activity android:name=".baselearn.activity.FrameGridLayoutActivity"/>
+    <activity android:name=".baselearn.activity.ToastActivity"/>
+    <activity android:name=".baselearn.activity.TextViewEditTextActivity"/>
+    <activity android:name=".baselearn.activity.ButtonActivity"/>
+    <activity android:name=".baselearn.activity.ImageViewActivity"/>
+    <activity android:name=".baselearn.activity.CheckBoxRadioButtonActivity"/>
+    <activity android:name=".baselearn.activity.ToggleButtonRadioBarActivity"/>
+    <activity android:name=".baselearn.activity.SpinnerAutoCompleteTextViewActivity"/>
+    <activity android:name=".mustlearn.MustLearnPointActivity"/>
+    <activity android:name=".mustlearn.dagger2.Dagger2Activity"/>
+    <activity android:name=".mustlearn.sqlite.SqliteActivity"/>
+    <activity android:name=".mustlearn.activitydata.FirstActivity"/>
+    <activity android:name=".mustlearn.activitydata.TwoActivity"/>
+    <activity android:name=".mustlearn.broadcastreceiverservicedemo.BcrActivity"/>
+    <activity android:name=".mustlearn.recyclerview.SuperRecyclerActivity"/>
+    <activity android:name=".customwidgets.activity.CustomWidgetsActivity"/>
+    <activity android:name="com.sunjiajia.monkeyandroid.customwidgets.activity.ShowWidgetsActivity"/>
+    // 广播接受者必须在清单文件中配置
+    <receiver android:name=".mustlearn.broadcastreceiverservicedemo.IpCallReceiver">
+      <intent-filter android:priority="1000">
+        //这里指定广播接收者接收哪个广播，这里时打电话广播
+        <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".mustlearn.broadcastreceiverservicedemo.SmsReceiver">
+      <intent-filter android:priority="1000">
+        <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+      </intent-filter>
+    </receiver>
+
+    <service
+        android:name=".mustlearn.broadcastreceiverservicedemo.MyService"
+        android:enabled="true"
+        android:exported="false">
+    </service>
   </application>
 
 </manifest>

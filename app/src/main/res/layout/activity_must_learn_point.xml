@@ -53,6 +53,73 @@
         android:layout_height="wrap_content"
         android:text="单元测试"
         />
+    <Button
+        android:id="@+id/btn_dagger2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dagger2的使用"
+        />
+
+    <Button
+        android:id="@+id/btn_sqlite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite数据库的使用方法"
+        />
+
+    <Button
+        android:id="@+id/btn_sqlite_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示SQLite数据库中的数据内容"
+        />
+
+    <Button
+        android:id="@+id/btn_download_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载查看网络图片"
+        />
+
+
+    <Button
+        android:id="@+id/btn_html"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HTML源文件查看器"
+        />
+
+    <Button
+        android:id="@+id/btn_super_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多线程断点下载示例"
+        />
+
+
+    <Button
+        android:id="@+id/btn_activity_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity之间传递数据"
+        />
+
+
+    <Button
+        android:id="@+id/btn_activity_broadcastreceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="广播接收者的使用"
+        />
+
+    <Button
+        android:id="@+id/btn_activity_super_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView的封装与加载更多"
+        />
+
   </LinearLayout>
+
 
 </ScrollView>

@@ -16,23 +16,25 @@
  */
 
 apply plugin: 'com.android.application'
+// android-apt
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
   signingConfigs {
     app {
       keyAlias 'sunjiajia'
       keyPassword '9985979aa'
-      storeFile file('D:/projects/AndroidStudioProjects/sunjiajia.jks')
+      storeFile file('/home/monkey/Projects/AndroidStudioProjects/sunjiajia.jks')
       storePassword '9985979aa'
     }
   }
-  compileSdkVersion 23
-  buildToolsVersion '23.0.2'
+  compileSdkVersion 24
+  buildToolsVersion '23.0.3'
 
   defaultConfig {
     applicationId "com.sunjiajia.monkeyandroid"
     minSdkVersion 14
-    targetSdkVersion 23
+    targetSdkVersion 24
     versionCode 1
     versionName "1.0"
     signingConfig signingConfigs.app
@@ -50,12 +52,22 @@ android {
     }
   }
 
+  testOptions {
+    unitTests.returnDefaultValues = true
+  }
+
   productFlavors {}
 }
 
 dependencies {
   compile fileTree(include: ['*.jar'], dir: 'libs')
+  testCompile 'junit:junit:4.12'
   compile 'com.jakewharton:butterknife:7.0.1'
-  compile 'com.android.support:design:23.3.0'
-  compile 'com.android.support:appcompat-v7:23.3.0'
+  compile 'com.android.support:design:24.0.0'
+  compile 'com.android.support:appcompat-v7:24.0.0'
+  // dagger2
+  compile 'com.google.dagger:dagger:2.2'
+  // dagger2
+  apt 'com.google.dagger:dagger-compiler:2.2'
+  provided 'javax.annotation:javax.annotation-api:1.2'
 }

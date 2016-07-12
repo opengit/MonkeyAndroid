@@ -17,19 +17,14 @@
 
 package com.sunjiajia.monkeyandroid;
 
-import android.Manifest;
-import android.app.Activity;
 import android.app.Application;
-import android.support.v4.app.ActivityCompat;
 
 /**
- * Created by Administrator on 2016/4/16.
+ * Created by Monkey on 2016/4/16.
  */
 public class MyApplication extends Application {
-
 
   @Override public void onCreate() {
     super.onCreate();
   }
-
 }

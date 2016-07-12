@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  *
+  ~  *  *  * ===================================
+  ~  *  *  * Copyright (c) 2016.
+  ~  *  *  * 作者：安卓猴
+  ~  *  *  * 微博：@安卓猴
+  ~  *  *  * 博客：http://sunjiajia.com
+  ~  *  *  * Github：https://github.com/opengit
+  ~  *  *  *
+  ~  *  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  *  * ===================================
+  ~  *  *
+  ~  *  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunjiajia.monkeyandroid.mustlearn.broadcastreceiverservicedemo.BcrActivity"
+    >
+
+  <Button
+      android:id="@+id/btn_ip_dialer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="拨打电话加上ip前缀"
+      />
+
+  <Button
+      android:id="@+id/btn_sms_blocker"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="短信拦截器"
+      />
+
+  <Button
+      android:id="@+id/btn_open_service"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="开启MyService服务"
+      />
+
+
+  <Button
+      android:id="@+id/btn_close_service"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="关闭MyService服务"
+      />
+
+</LinearLayout>

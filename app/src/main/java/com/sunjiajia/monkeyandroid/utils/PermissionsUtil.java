@@ -56,7 +56,8 @@ public class PermissionsUtil {
       Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE,
       Manifest.permission.INTERNET, Manifest.permission.CAMERA,
       Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.ACCESS_WIFI_STATE,
-      Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_CONTACTS
+      Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_CONTACTS,
+      Manifest.permission.SEND_SMS, Manifest.permission.CALL_PHONE
   };
 
   public static void checkAndRequestPermissions(final Activity activity) {

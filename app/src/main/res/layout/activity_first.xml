@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  *
+  ~  *  *  * ===================================
+  ~  *  *  * Copyright (c) 2016.
+  ~  *  *  * 作者：安卓猴
+  ~  *  *  * 微博：@安卓猴
+  ~  *  *  * 博客：http://sunjiajia.com
+  ~  *  *  * Github：https://github.com/opengit
+  ~  *  *  *
+  ~  *  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  *  * ===================================
+  ~  *  *
+  ~  *  *
+  ~  *
+  ~  */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sunjiajia.monkeyandroid.mustlearn.activitydata.FirstActivity"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="这是姻缘计算器，很准的哟"
+      />
+
+  <EditText
+      android:id="@+id/et_male_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="吕布"
+      />
+  <EditText
+      android:id="@+id/et_female_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="貂蝉"
+      />
+
+  <Button
+      android:id="@+id/btn_make1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="计算1"
+      />
+  <Button
+      android:id="@+id/btn_make2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="计算2"
+      />
+
+</LinearLayout>

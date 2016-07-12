@@ -25,6 +25,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import com.sunjiajia.monkeyandroid.R;
+import com.sunjiajia.monkeyandroid.customwidgets.activity.CustomWidgetsActivity;
 import com.sunjiajia.monkeyandroid.mustlearn.MustLearnPointActivity;
 
 /**
@@ -60,6 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int id = item.getItemId();
     if (id == R.id.menu_must_learn_point) {
       Intent intent = new Intent(this, MustLearnPointActivity.class);
+      intent.putExtra("title", item.getTitle());
+      startActivity(intent);
+    } else if (id == R.id.menu_custom_widgets) {
+      Intent intent = new Intent(this, CustomWidgetsActivity.class);
       intent.putExtra("title", item.getTitle());
       startActivity(intent);
     }
