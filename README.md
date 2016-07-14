@@ -25,7 +25,12 @@
 * 获取SD卡剩余空间
 * 使用XML备份短信
 * 解析XML
+* 精通 Android Data Binding的用法及示例
 
 ### 自定义控件
 
 * 写了一个简单的按比例显示图片的ImageView，可调用setRatio方法设置宽高比显示图片
+
+## 微信公众号：Android奇想录（android_amazing）
+
+![Android奇想录](http://sunjiajia.com/img/qrcode_for_android_amazing.jpg)

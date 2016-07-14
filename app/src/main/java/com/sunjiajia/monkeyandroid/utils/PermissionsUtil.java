@@ -86,7 +86,7 @@ public class PermissionsUtil {
           if (!isAppFirstRun(activity)) {
             Snackbar snackbar =
                 Snackbar.make(activity.findViewById(R.id.btn_sdcard_avail), "这次是真的需要去授权了",
-                    Snackbar.LENGTH_INDEFINITE);
+                    Snackbar.LENGTH_LONG);
             snackbar.setAction("前往设置", new View.OnClickListener() {
               @Override public void onClick(View v) {
                 // 进入App设置页面

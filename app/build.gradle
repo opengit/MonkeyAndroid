@@ -40,6 +40,10 @@ android {
     signingConfig signingConfigs.app
   }
 
+  dataBinding {
+    enabled true
+  }
+
   buildTypes {
     release {
       minifyEnabled false

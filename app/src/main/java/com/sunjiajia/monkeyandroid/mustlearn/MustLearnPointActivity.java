@@ -53,6 +53,7 @@ import com.sunjiajia.monkeyandroid.domain.Message;
 import com.sunjiajia.monkeyandroid.mustlearn.activitydata.FirstActivity;
 import com.sunjiajia.monkeyandroid.mustlearn.broadcastreceiverservicedemo.BcrActivity;
 import com.sunjiajia.monkeyandroid.mustlearn.dagger2.Dagger2Activity;
+import com.sunjiajia.monkeyandroid.mustlearn.databinding.DataBindingActivity;
 import com.sunjiajia.monkeyandroid.mustlearn.recyclerview.SuperRecyclerActivity;
 import com.sunjiajia.monkeyandroid.mustlearn.sqlite.MySQLiteOpenHelper;
 import com.sunjiajia.monkeyandroid.mustlearn.sqlite.SqliteActivity;
@@ -91,6 +92,7 @@ public class MustLearnPointActivity extends AppCompatActivity
   @Bind(R.id.btn_activity_data) Button mBtnActivityData;
   @Bind(R.id.btn_activity_broadcastreceiver) Button mBtnActivityBroadcastreceiver;
   @Bind(R.id.btn_activity_super_recyclerview) Button mBtnActivitySuperRecyclerView;
+  @Bind(R.id.btn_activity_data_binding) Button mBtnActivityDataBinding;
 
   private View mContentView;
   private List<Message> smsList;
@@ -120,7 +122,8 @@ public class MustLearnPointActivity extends AppCompatActivity
       R.id.btn_sdcard_avail, R.id.btn_sms_backup, R.id.btn_xml_parse, R.id.btn_unit_debug,
       R.id.btn_dagger2, R.id.btn_sqlite, R.id.btn_sqlite_activity, R.id.btn_download_image,
       R.id.btn_html, R.id.btn_super_download, R.id.btn_activity_data,
-      R.id.btn_activity_broadcastreceiver, R.id.btn_activity_super_recyclerview
+      R.id.btn_activity_broadcastreceiver, R.id.btn_activity_super_recyclerview,
+      R.id.btn_activity_data_binding
   }) void btnClicked(View v) {
     switch (v.getId()) {
       case R.id.btn_sdcard_avail:
@@ -164,6 +167,11 @@ public class MustLearnPointActivity extends AppCompatActivity
         intent.putExtra("title", mBtnActivitySuperRecyclerView.getText().toString());
         startActivity(intent);
         break;
+      case R.id.btn_activity_data_binding:
+        Intent intent01 = new Intent(MustLearnPointActivity.this, DataBindingActivity.class);
+        intent01.putExtra("title", mBtnActivityDataBinding.getText().toString());
+        startActivity(intent01);
+        break;
     }
   }
 
@@ -178,6 +186,9 @@ public class MustLearnPointActivity extends AppCompatActivity
 
     MyDownloadAsyncTask task = new MyDownloadAsyncTask(downloadThreadNums);
     task.execute(path);
+  }
+
+  @OnClick(R.id.btn_activity_data_binding) public void onClick() {
   }
 
   /**

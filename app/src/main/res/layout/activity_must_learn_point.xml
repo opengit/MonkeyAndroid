@@ -119,6 +119,13 @@
         android:text="RecyclerView的封装与加载更多"
         />
 
+    <Button
+        android:id="@+id/btn_activity_data_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DataBinding的用法"
+        />
+
   </LinearLayout>
 
 

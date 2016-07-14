@@ -63,7 +63,7 @@
     <activity android:name=".mustlearn.broadcastreceiverservicedemo.BcrActivity"/>
     <activity android:name=".mustlearn.recyclerview.SuperRecyclerActivity"/>
     <activity android:name=".customwidgets.activity.CustomWidgetsActivity"/>
-    <activity android:name="com.sunjiajia.monkeyandroid.customwidgets.activity.ShowWidgetsActivity"/>
+    <activity android:name=".customwidgets.activity.ShowWidgetsActivity"/>
     // 广播接受者必须在清单文件中配置
     <receiver android:name=".mustlearn.broadcastreceiverservicedemo.IpCallReceiver">
       <intent-filter android:priority="1000">
@@ -82,6 +82,9 @@
         android:enabled="true"
         android:exported="false">
     </service>
+
+    <activity android:name=".mustlearn.databinding.DataBindingActivity">
+    </activity>
   </application>
 
 </manifest>
